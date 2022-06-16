@@ -12,6 +12,7 @@ import UIKit
 enum Event {
     case buttonTapped1
     case buttonTapped2
+    case buttonTapped3
 }
 
 protocol Coordinator {

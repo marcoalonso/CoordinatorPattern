@@ -24,7 +24,14 @@ class MainCoordinator: Coordinator {
             var vc: UIViewController & Coordinating = ThirdViewController()
             vc.coordinator = self
             navigationController?.pushViewController(vc, animated: true)
+            
+        case .buttonTapped3:
+            var vc: UIViewController & Coordinating = OtroViewController()
+            vc.coordinator = self
+            navigationController?.pushViewController(vc, animated: true)
         }
+        
+        
     }
     
     func start() {

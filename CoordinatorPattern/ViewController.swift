@@ -29,7 +29,7 @@ class ViewController: UIViewController, Coordinating {
         createSystemButton()
         createContactAddButton()
                
-//               createDetailDisclosureButton()
+               createDetailDisclosureButton()
 //               createInfoLightButton()
 //               createInfoDarkButton()
 //               createCustomButton()
@@ -42,6 +42,11 @@ class ViewController: UIViewController, Coordinating {
     
     @objc func didTapButton2() {
         coordinator?.eventOccurred(with: .buttonTapped2)
+        
+    }
+    
+    @objc func didTapButton3() {
+        coordinator?.eventOccurred(with: .buttonTapped3)
         
     }
     
@@ -75,7 +80,7 @@ class ViewController: UIViewController, Coordinating {
             // detailDisclosureBtn.setTitle("Detail Disclosure Button", for: UIControl.State.normal)
             // detailDisclosureBtn.setTitleColor(UIColor.red, for: UIControl.State.normal)
             // detailDisclosureBtn.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-            
+            detailDisclosureBtn.addTarget(self, action: #selector(didTapButton3), for: .touchUpInside)
             self.view.addSubview(detailDisclosureBtn)
         }
         
