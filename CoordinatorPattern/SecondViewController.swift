@@ -17,7 +17,7 @@ class SecondViewController: UIViewController, Coordinating {
         
         view.backgroundColor = .systemPurple
         
-        let imagen = UIImageView(frame: CGRect(x: 0, y: 50, width: 200, height: 200))
+        let imagen = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
         imagen.image = UIImage(systemName: "person.fill")
         view.addSubview(imagen)
     }
